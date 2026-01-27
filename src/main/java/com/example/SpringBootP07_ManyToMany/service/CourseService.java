@@ -1,7 +1,7 @@
 package com.example.SpringBootP07_ManyToMany.service;
 
-import com.example.SpringBootWithDBRevision_P02.dto.CourseRequestDTO;
-import com.example.SpringBootWithDBRevision_P02.dto.CourseResponseDTO;
+import com.example.SpringBootP07_ManyToMany.dto.CourseRequestDTO;
+import com.example.SpringBootP07_ManyToMany.dto.CourseResponseDTO;
 
 import java.util.List;
 import java.util.zip.CheckedOutputStream;
