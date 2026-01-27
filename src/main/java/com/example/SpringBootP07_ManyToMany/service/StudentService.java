@@ -1,7 +1,7 @@
 package com.example.SpringBootP07_ManyToMany.service;
 
-import com.example.SpringBootWithDBRevision_P02.dto.StudentRequestDTO;
-import com.example.SpringBootWithDBRevision_P02.dto.StudentResponseDTO;
+import com.example.SpringBootP07_ManyToMany.dto.StudentRequestDTO;
+import com.example.SpringBootP07_ManyToMany.dto.StudentResponseDTO;
 
 import java.time.LocalDate;
 import java.util.List;
