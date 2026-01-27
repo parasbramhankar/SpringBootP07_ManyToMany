@@ -1,12 +1,11 @@
 package com.example.SpringBootP07_ManyToMany.controller;
 
-import com.example.SpringBootWithDBRevision_P02.dto.StudentResponseDTO;
-import com.example.SpringBootWithDBRevision_P02.service.impl.StudentServiceImpl;
+import com.example.SpringBootP07_ManyToMany.dto.StudentRequestDTO;
+import com.example.SpringBootP07_ManyToMany.dto.StudentResponseDTO;
+import com.example.SpringBootP07_ManyToMany.service.impl.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,4 +20,11 @@ public class StudentController {
     public ResponseEntity<List<StudentResponseDTO>>getAllStudent(){
         return ResponseEntity.ok(studentService.getAllStudents());
     }
+
+    @PostMapping("/create")
+    public ResponseEntity<StudentResponseDTO>createStudent(@RequestBody StudentRequestDTO studentRequestDTO){
+        StudentResponseDTO studentResponseDTO=studentService.createStudent(studentRequestDTO);
+
+    }
+
 }
