@@ -1,13 +1,21 @@
 package com.example.SpringBootP07_ManyToMany.dto;
 
-import com.example.SpringBootWithDBRevision_P02.entity.Course;
+import com.example.SpringBootP07_ManyToMany.entity.Course;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Setter
+@Getter
+@NoArgsConstructor
+@AllArgsConstructor
 public class StudentResponseDTO {
     private int id;
     private String name;
     private LocalDate DOB;
-    private List<Course>courses;
+    private List<CourseResponseDTO>courses;
 }
