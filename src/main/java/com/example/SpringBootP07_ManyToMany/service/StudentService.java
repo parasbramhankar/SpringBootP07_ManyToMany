@@ -2,6 +2,7 @@ package com.example.SpringBootP07_ManyToMany.service;
 
 import com.example.SpringBootP07_ManyToMany.dto.StudentRequestDTO;
 import com.example.SpringBootP07_ManyToMany.dto.StudentResponseDTO;
+import com.example.SpringBootP07_ManyToMany.entity.Student;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -16,8 +17,8 @@ public interface StudentService {
 
     //UPDATE
      StudentResponseDTO updateStudent(int id, StudentRequestDTO studentRequestDTO);
-     String updateDOB(int id, LocalDate date);
+     StudentResponseDTO updateDOB(int id, LocalDate date);
 
     //DELETE
-     String deleteStudent(int id);
+     void deleteStudent(int id);
 }
