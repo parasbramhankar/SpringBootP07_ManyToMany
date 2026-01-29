@@ -6,7 +6,7 @@ import com.example.SpringBootP07_ManyToMany.service.CourseService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+/*
 @Service
 public class CourseServiceImpl implements CourseService {
 //    CourseResponseDTO createCourse(CourseRequestDTO dto);
@@ -21,3 +21,5 @@ public class CourseServiceImpl implements CourseService {
 
 
 }
+
+ */
