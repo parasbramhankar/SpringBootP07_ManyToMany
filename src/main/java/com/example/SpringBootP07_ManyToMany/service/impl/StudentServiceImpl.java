@@ -11,6 +11,7 @@ import com.example.SpringBootP07_ManyToMany.repo.CourseRepo;
 import com.example.SpringBootP07_ManyToMany.repo.StudentRepo;
 import com.example.SpringBootP07_ManyToMany.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+@Service
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
@@ -98,6 +100,7 @@ public class StudentServiceImpl implements StudentService {
         return mapToResponseDTO(student);
 
     }
+
 
     @Override
     public StudentResponseDTO updateStudent(int id, StudentRequestDTO studentRequestDTO){
