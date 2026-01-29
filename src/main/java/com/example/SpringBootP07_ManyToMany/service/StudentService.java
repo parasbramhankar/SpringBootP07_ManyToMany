@@ -2,7 +2,6 @@ package com.example.SpringBootP07_ManyToMany.service;
 
 import com.example.SpringBootP07_ManyToMany.dto.StudentRequestDTO;
 import com.example.SpringBootP07_ManyToMany.dto.StudentResponseDTO;
-import com.example.SpringBootP07_ManyToMany.entity.Student;
 
 import java.time.LocalDate;
 import java.util.List;
